@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foodiee</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="img/font.png">
+<script type="text/javascript" src="bundle.js"></script></head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Foodiee</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" placeholder="Search" type="text">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#reservation">Reservation</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#cocktails">Cocktails</a>
+            <a class="dropdown-item" href="#starters">Starters</a>
+            <a class="dropdown-item" href="#mains">Main Plates</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Timings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 h-100" src="img/banner1.jpg" alt="First slide justify-content-center">
+        <div class="carousel-caption align-items-center">
+          <p class="lead">Good taste.Good sense.</p>
+        </div>
+      </div>
+      <div class="carousel-item align-items-center justify-content-center">
+        <img class="d-block w-100 h-100" src="img/banner2.jpg" alt="Second slide">
+        <div class="carousel-caption align-items-center">
+          <p class="lead">Good taste.Good sense.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/banner3.jpg" alt="Third slide">
+        <div class="carousel-caption">
+          <p class="lead">Good taste.Good sense.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="d-block w-100" src="img/image1.jpg" alt="ancientcooking">
+      </div>
+      <div class="col-sm-6">
+        <h3 class="text-center font-weight-bold subheading1">Cooking is Love</h3>
+        <blockquote class="blockquote text-center text-justify">
+          <p class="mb-0"><q>
+              Cooking is one of the strongest ceremonies for life. When recipes are put together, the kitchen is a chemical laboratory
+              involving air, fire, water and the earth. This is what gives value to humans and elevates their spiritual qualities.
+              If you take a frozen box and stick it in the microwave, you become connected to the factory.
+            </q>
+          </p>
+          <footer class="blockquote-footer text-right bg-light text-dark">Laura Esquivel</footer>
+        </blockquote>
+        <blockquote class="blockquote text-center">
+          <p class="mb-0"><q>
+              Cooking is like love. It should be entered into with abandon or not at all.
+            </q>
+          </p>
+          <footer class="blockquote-footer text-right bg-light text-dark">Harriet Van Horne</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <hr class="accent my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto col-12 text-center mb-3">
+        <h1 class="mt-0 text-primary text-danger" id="menu">Our Menu</h1>
+        <p class="lead">Begin with a selection from our award winning beverage menu or choose a starter from our extensive
+          starter list. Our wine list features over 100 different vintages and has received the chamber of commerce award
+          of excellence.</p>
+      </div>
+      <div class="col-12 mt-4">
+        <hr class="accent my-5">
+        <h3 class="text-center" id="cocktails">Cocktails</h3>
+        <hr class="accent my-5">
+      </div>
+      <div class="card-rows card-deck justify-content-center">
+        <div class="card-columns card-deck justify-content-center">
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$10</span>
+            <h6>Chocolate Martini</h6>
+            <img class="d-block w-100" src="img/martini.jpeg" alt="chocolate">
+            <p class="small">Tito's Vodka and White Créme de Cacao dusted with hand shaved chocolate.</p>
+          </div>
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$9</span>
+            <h6>Summer Breeze Martini</h6>
+            <img class="d-block w-100" src="img/summer.jpeg" alt="summer">
+            <p class="small">Hendrick’s Gin, St. Germain Elderflower Liqueur and Brancot Sauvignon Blanc with a floater of
+              Cristalino Cava Brut.</p>
+          </div>
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$9</span>
+            <h6>Sweet Heat Margarita</h6>
+            <img class="d-block w-100" src="img/sweet.jpeg" alt="sweet">
+            <p class="small">Jalapeño infused tequila, triple sec, pineapple juice, orange liqueur, and lime juice.</p>
+          </div>
+        </div>
+        <div class="card-columns card-deck justify-content-center ">
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$10</span>
+            <h6 class>Prickly Pear</h6>
+            <img class="d-block w-100" src="img/prickly.jpeg" alt="Prickly">
+            <p class="small">Cactus fruits, also known as "prickly pears," .New Amsterdam Vodka and Pear liquer in a sugar
+              . Conatins tequila,lime juice</p>
+          </div>
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$9</span>
+            <h6>Classic Martini</h6>
+            <img class="d-block w-100" src="img/classic.jpeg" alt="classic">
+            <p class="small">Seagrams Gin, Dry Vermouth, pickle juice, olive juice.</p>
+          </div>
+          <div class="card card-body card text-white bg-success mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$9</span>
+            <h6>Rosmerry Refresher</h6>
+            <img class="d-block w-100" src="img/ruby.jpeg" alt="ruby">
+            <p class="small">House infused rosemary vodka, Germaine Elderflower liqueur, grapefruit juice and a splash of
+              soda
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-4">
+      <hr class="accent my-5">
+      <h3 class="text-center" id="starters">Starters</h3>
+      <hr class="accent my-5">
+    </div>
+
+    <!-- starter -->
+    <div class="card-rows card-deck justify-content-center">
+      <div class="card-columns card-deck justify-content-center">
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$9.95</span>
+          <h6 class="text-truncate">Fried Shrimp</h6>
+          <img class="d-block w-100" src="img/shrimp.jpeg" alt="Shrimp">
+          <p class="small">Sustainably raised Argentine red shrimp, fried golden brown and served with chipotle mayonnaise
+            for dipping.</p>
+        </div>
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$8.95</span>
+          <h6 class="text-truncate">Tuscan Bruschetta</h6>
+          <img class="d-block w-100" src="img/tuscan.jpeg" alt="Tuscan">
+          <p class="small">Crusty sliced Italian bread topped with basil, extra virgin olive oil, chopped tomatoes, garlic
+            and fresh mozzarella cheese.</p>
+        </div>
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$7.95</span>
+          <h6 class="text-truncate">Quesadilla</h6>
+          <img class="d-block w-100" src="img/Quesadilla.jpeg" alt="Quesadilla">
+          <p class="small">Jack and cheddar cheese, chopped mild green chilies in a pan grilled flour tortilla. Served with
+            sour cream, guacamole.
+        </div>
+      </div>
+      <div class="card-columns card-deck justify-content-center">
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$9.95</span>
+          <h6 class="text-truncate">Wings</h6>
+          <img class="d-block w-100" src="img/wings.jpeg" alt="wings">
+          <p class="small">A dozen of our crispy, tasty chicken wings with Classic Sweet BBQ sauce, Hot Buffalo Sauce and
+            Scorching Hot Habanero</p>
+        </div>
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$8.95</span>
+          <h6 class="text-truncate">Ultimate Nacho Platter</h6>
+          <img class="d-block w-100" src="img/nacho.jpeg" alt="Nacho">
+          <p class="small">
+            House made corn tortilla chips, melted cheddar-Jack cheese, mild Anaheim chile salsa, refried beans, guacamole &amp; sour
+            cream
+          </p>
+        </div>
+        <div class="card card-body card text-white bg-info mb-3" style="max-width: 20rem;">
+          <span class="float-right font-weight-bold">$10</span>
+          <h6 class="text-truncate">Stuffed Clams</h6>
+          <img class="d-block w-100" src="img/clam.jpeg" alt="clams">
+          <p class="small">Three large stuffies with chopped clams, medium spiced chouriço Portuguese sausage, chopped bacon,
+            onions, pepper.</p>
+        </div>
+      </div>
+
+      <!-- horizontal line -->
+      <div class="col-12 mt-4">
+        <hr class="accent my-5">
+        <h3 class="text-center" id="mains">Main Plates</h3>
+        <hr class="accent my-5">
+      </div>
+
+      <!-- main plates -->
+      <div class="card-rows card-deck justify-content-center">
+        <div class="card-columns card-deck justify-content-center">
+          <div class="card card-body card text-white bg-secondary mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$17.95</span>
+            <h6 class="text-underline">Fat Tuesday Salad</h6>
+            <img class="d-block w-100" src="img/salad.jpeg" alt="salad">
+            <p class="small">
+              New Orleans style hot sliced Cajun chicken breast with mixed greens, tomatoes, cucumbers and hard-cooked eggs with warm spicy
+              honey.
+            </p>
+          </div>
+          <div class="card card-body card text-white bg-secondary mb-3 " style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$25.95</span>
+            <h6>Braised Boneless Beef Ribs</h6>
+            <img class="d-block w-100" src= "img/Short.jpeg" alt="Braised Boneless Beef Short Ribs">
+            <p class="small">
+              Braised low and slow, resulting in meat that is deeply flavored, sublimely succulent and tender as can be imagined.</p>
+          </div>
+          <div class="card card-body card text-white bg-secondary mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$15.95</span>
+            <h6>Jambalaya</h6>
+            <img class="d-block w-100" src="img/jambalay.jpeg" alt="jambalaya">
+            <p class="small">
+              Shrimp, chicken, andouille sausage, rice and traditional jambalaya vegetables and spices. Garnished with sweet red and yellow
+              pepper.
+            </p>
+          </div>
+        </div>
+        <div class="card-columns card-deck justify-content-center">
+          <div class="card card-body card text-white bg-secondary mb-3" style="max-width: 20rem; max-height: 20rem;">
+            <span class="float-right font-weight-bold">$12.95</span>
+            <h6>Barbecued Chicken Biryani</h6>
+            <img class="d-block w-100" src="img/barbeque.jpeg" alt="barbeque">
+            <p class="small">
+              Chicken tikka, tossed with basmati rice, fried onions and coriander, accompanied by a vegetable sauce.Served with curd.
+            </p>
+          </div>
+          <div class="card card-body card text-white bg-secondary mb-3" style="max-width: 20rem; max-height: 20rem;">
+            <span class="float-right font-weight-bold">$25.95</span>
+            <h6>King prawn Biriyani</h6>
+            <img class="d-block w-100" src="img/prawn.jpeg" alt="prawn">
+            <p class="small">
+              Off the shell marinated king prawns, cooked with basmati rice, fried onions and coriander, accompanied by a vegetable sauce.</p>
+          </div>
+          <div class="card card-body card text-white bg-secondary mb-3" style="max-width: 20rem;max-height: 20rem;">
+            <span class="float-right font-weight-bold">$14.95</span>
+            <h6>Veg Biriyani</h6>
+            <img class="d-block w-100" src="img/veg.jpeg" alt="veg biriyani">
+            <p class="small">
+              This biriyani is cooked with curd, beans, carrot, potato, almond paste,dry fruits,and green chilies,and has a rich flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-4">
+        <hr class="accent my-5">
+      </div>
+    </div>
+  </div>
+  <!-- <div class="jumbotron">
+                  <div class="col-6 mx-auto">
+                    <div class="card card-body text-center card text-white bg-danger mb-3" style="max-width: 20rem">
+                      <h5 class="text-uppercase">Tuesday Only!</h5>
+                      <h6>Albondigas Soup</h6>
+                      <p class="small">
+                        A steaming cup or bowl of Mexican meatball &amp; vegetable soup garnished with crispy tortilla strips and fresh cheddar-Jack
+                        cheese. If you like Mexican food try this!</p>
+                      <span class="float-right font-weight-bold">$7</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <hr class="accent my-5">
+                </div> -->
+  <!-- jumbotron for tuesday special -->
+  <div class="jumbotron justify-content-center">
+    <div class="col-8 mx-auto">
+      <div class="card card-body card text-white bg-danger mb-3">
+        <h4 class="text-uppercase text-center">Tuesday Only!</h4>
+        <h5 class="text-center">Albondigas Soup</h5>
+        <img class="d-block w-100" src="img/soup.jpg" alt="soup">
+        <p>
+          A steaming cup or bowl of Mexican meatball &amp; vegetable soup garnished with crispy tortilla strips and fresh cheddar-Jack
+          cheese. If you like Mexican food try this!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mt-4">
+    <hr class="accent my-5">
+  </div>
+
+  <!--resevation form -->
+  <div class="container" id="reservation">
+    <h3 class="text-center">Reservation</h3>
+    <form action="#">
+      <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+        <label for="sel1">No.of table:</label>
+        <select class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox"> Remember me
+        </label>
+      </div>
+      <div class="d-inline">
+        <button type="submit" class="btn btn-secondary">Make Reservation</button>
+        <button type="button" class="btn btn-danger">
+          Info<span class="badge badge-light">10</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- Modal for timing -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Opening Hours</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <p class="lead">
+            Monday-Friday:11am-10pm<br> Saturday:10am-11pm
+            <br> Sunday:10am-12pm
+            <br>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-primary">
+    <hr>
+    <div class="text-center center-block">
+      <p class="lead">Foodiee.com</p>
+      <br />
+      <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social bg-dark"></i></a>
+      <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social bg-dark"></i></a>
+      <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social bg-dark"></i></a>
+      <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social bg-dark"></i></a>
+    </div>
+    <hr>
+  </footer>
+</body>
+
+</html>
